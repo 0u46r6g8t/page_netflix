@@ -1,0 +1,202 @@
+/* Definindo as cores para melhorar na hora de realizar alguma manutenção do site */
+
+:root{
+    --red: rgb(230, 0, 0);
+    --border-default: 5px;
+}
+
+/* Retirando as margens e os padding padrões */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.3)), url('/image/background-image.jpg');
+    font-family: Arial, Times, serif;
+    height: 100vh;
+    color: white;
+}
+
+/* Imagem da logo no cabeçalho */
+
+#imgLogo{
+    height: 60px;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.container-login{
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 660px;
+    border-radius: var(--border-default);
+    margin: auto;
+    width: 450px;
+    border: 1px solid black;
+}
+
+.box-login{
+    height: 53%;
+    width: 70%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.box-login .title-login{
+    font-size: 34px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-login #data-login{
+    height: 190px;
+    text-align: center;
+}
+
+/* Estilizando o formulário com user_name e password */
+
+.form-login{
+    width: 100%;
+    margin-top: 1px;
+    border: 0;
+}
+
+
+.input-data{
+    width: 95%;
+    height: 45px;
+    background-color: rgb(59, 58, 58);
+    border: 5px solid rgb(59, 58, 58);
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    transition: all 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+    border-radius: var(--border-default);
+    margin-top: 20px;
+}
+
+.input-data:focus{
+    border-bottom: 2px solid #918F9E;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-login .button-login{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background-color: var(--red);
+    border: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: var(--border-default);
+}
+
+.form-login .checkbox{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #918F9E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-login .checkbox a{
+    color: #918F9E;
+    font-size: 13px;
+    height: 14px;
+    text-decoration: none;
+}
+
+.form-login .checkbox a:hover{
+    border-bottom: 1px solid #918F9E;
+}
+
+/* Configurando a conexão via rede social */
+
+.box-network{
+    width: 70%;
+    height: 17%;
+    margin: auto;
+}
+
+.connect-facebook a{
+    text-decoration: none;
+    color: #62606B;
+    font-size: 14px;
+}
+
+.connect-facebook a label{
+    margin-left: 10px;
+}
+
+.connect-facebook a label:hover{
+    cursor: pointer;
+}
+
+.logo-facebook{
+    width: 20px;
+}
+
+/* Estilizando a tag para criar novos users */
+
+.new-user {
+    margin-top: 15px;
+}
+
+.new-user label{
+    color: #918F9E;
+    font-size: 17px;
+}
+
+.new-user label a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.new-user label a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+/* Estilizando o informe do Captcha */
+
+.information-captcha{
+    margin-top: 10px;
+}
+
+.information-captcha label{
+    font-size: 14px;
+    color: #918F9E;
+}
+
+.term-license{
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.term-license:hover{
+    border-bottom: 1px solid #0071eb;
+}
+
+.button-term{
+    background-color: rgb(0, 0, 0, 0);
+    border: 0;
+    color: #0071eb;
+}
+
+.button-term:hover{
+    border-bottom: 1px solid #0071eb;
+    overflow: hidden;
+    outline: 0;
+}
+
+/* Estilizando as informações ocultas */
+
+.label-hidden{
+    font-size: 12px;
+    margin-top: 10px;
+    visibility: hidden;
+    text-align: justify;
+}
+

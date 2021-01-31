@@ -1,0 +1,53 @@
+
+/* Configurando o footer */
+
+.div-footer{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Estilização do Container footer  */
+
+.container-footer{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.container-footer .number-help{
+    font-size: 16px;
+    color: #918F9E;
+}
+
+.container-footer .number-help a{
+    text-decoration: none;
+    color: #918F9E;
+}
+
+.container-footer .number-help a:hover{
+    border-bottom: 1px solid #918F9E;
+}
+
+/* Estilizando as questions */
+
+.container-footer .questions-help{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-footer .questions-help a{
+    text-decoration: none;
+    color: #918F9E;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 13px;
+
+}
+
+/* Configurando o select de idiomas */
+
