@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" http-equiv="encoding"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        
+        <!-- Arquivos CSS -->
+        <link rel="stylesheet" href="/css/login/styles.css"/>
+        <link rel="stylesheet" href="/css/login/footer.css"/>
+
+        
+        <!-- API de icon(s) -->
+        <script src="https://kit.fontawesome.com/7b768cc6e8.js" crossorigin="anonymous"></script>
+
+        <!-- Title da page -->
+        <title>Netflix</title>
     </head>
     <body>
-        <h2 style="justify-content: center; ">Netflix</h2>
+        <header>
+            <div class="container">
+                <h2 class="logo"><img src="./image/logo/Netflix-Logo.png" id="imgLogo" alt=""></h2>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container-login">
+                <div class="box-login">
+                    <h1 class="title-login">Entrar</h1>
+                    <form class="form-login" method="POST">
+                        <div id="data-login">
+                            <input type="email" class="input-data" id="name" name="tname" placeholder="Email ou número de telefone">
+                            <input type="password" class="input-data" id="password" name="tpassword" placeholder="Senha">
+                        </div>
+                        <button class="button-login" role="button" onclick="sendLogin()">Entrar</button>
+                        <div class="checkbox">
+                            <div class="checkbox-data">
+                                <input type="checkbox" id="checkbox-data">
+                                <label for="checkbox-data">Lembra-se de mim</label>
+                            </div>
+                            <a href="https://www.netflix.com/br/LoginHelp">Precisa de ajuda?</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="box-network">
+                    <div class="network-connect">
+                        <div class="connect-facebook">
+                            <a href="https://www.facebook.com">
+                                <img src="./image/logo/icon-facebook.svg" class="logo-facebook">
+                                <label>Conectar com facebook</label>
+                            </a>
+                        </div>
+                        <div class="new-user">
+                            <label>Novo por aqui? <a href="https://www.netflix.com/br/">Assine agora.</a></label>
+                        </div>
+                    </div>
+                    <div class="information-captcha">
+                        <label for="">
+                            Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <button id="button-term" class="button-term" onclick="buttonHidden()">Saiba Mais</button>
+                        </label>
+                        <div class="label-hidden" id="label-hidden">
+                            <label>
+                                As informações recolhidas pelo Google reCAPTCHA estão sujeitas à <a class="term-license" href="https://policies.google.com/privacy">Política de Privacidade</a> e <a class="term-license" href="https://policies.google.com/terms">Termos de Uso</a>, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="div-footer">
+                <div class="container-footer">
+                    <div class="number-help">
+                        <label> Dúvidas? Ligue <a href="tel:0800-761-4631">0800-761-4631</a></label>
+                    </div>
+                    <div class="questions-help">
+                        <a href="https://help.netflix.com/pt/node/412">Perguntas frequentes</a>
+                        <a href="https://help.netflix.com/">Centro de ajuda</a>
+                        <a href="https://help.netflix.com/legal/termsofuse">Termos de uso</a>
+                        <a href="https://help.netflix.com/legal/privacy">Privacidade</a>
+                        <a href="https://help.netflix.com/legal/privacy#cookies">Preferências de cookies</a>
+                        <a href="https://help.netflix.com/legal/corpinfo">Informações corporativas</a>
+                    </div>
+    
+                    <div class="select-footer">
+                        <div class="footer-icon-selecter">
+                            <select>
+                                <option value="0">Português</option>
+                                <option value="1">Inglês</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
     </body>
+    <!-- Arquivo JS -->
+    <script src="/JS/owl/script.js"></script>
 </html>
